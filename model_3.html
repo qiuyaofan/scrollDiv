@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>滚动列表插件</title>
+	<!-- <link rel="stylesheet" href="assets/css/model_2.css"> -->
+	<style>
+	* {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box
+	}
+
+	a img {
+	    border: none
+	}
+
+	ul {
+	    list-style: none
+	}
+
+	body {
+	    font: normal 14px/1 "Microsoft YaHei", serif, arial;
+	    color: #333
+	}
+	.scrollDiv,.scrollDiv1 {
+	    width: 175px;
+	    height: 63px;
+	    overflow: hidden;
+	    margin-bottom: 20px;
+	    float:left;
+	}
+	.scrollDiv1{
+		height: 84px;
+	}
+	.scrollDiv span,.scrollDiv1 span {
+	    display: inline-block;
+	    width: 64px
+	}
+
+	.scrollDiv li,.scrollDiv1 li {
+	    border-bottom: 1px solid #e8c878;
+	    line-height: 20px
+	}
+	</style>
+</head>
+<body class="pr fixed">
+	<div class="scrollDiv">
+        <ul>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆1</span>138xxxx2502</li>
+        	<li><span>小土豆2</span>138xxxx2502</li>
+        	<li><span>小土豆3</span>138xxxx2502</li>
+        	<li><span>小土豆4</span>138xxxx2502</li>
+        	<li><span>小土豆5</span>138xxxx2502</li>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆1</span>138xxxx2502</li>
+        	<li><span>小土豆2</span>138xxxx2502</li>
+        	<li><span>小土豆3</span>138xxxx2502</li>
+        	<li><span>小土豆4</span>138xxxx2502</li>
+        	<li><span>小土豆5</span>138xxxx2502</li>
+        </ul>
+    </div>
+    <div class="scrollDiv">
+        <ul>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆1</span>138xxxx2502</li>
+        	<li><span>小土豆2</span>138xxxx2502</li>
+        	<li><span>小土豆3</span>138xxxx2502</li>
+        	<li><span>小土豆4</span>138xxxx2502</li>
+        	<li><span>小土豆5</span>138xxxx2502</li>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆1</span>138xxxx2502</li>
+        	<li><span>小土豆2</span>138xxxx2502</li>
+        	<li><span>小土豆3</span>138xxxx2502</li>
+        	<li><span>小土豆4</span>138xxxx2502</li>
+        	<li><span>小土豆5</span>138xxxx2502</li>
+        </ul>
+    </div>
+    <div class="scrollDiv1">
+        <ul>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆1</span>138xxxx2502</li>
+        	<li><span>小土豆2</span>138xxxx2502</li>
+        	<li><span>小土豆3</span>138xxxx2502</li>
+        	<li><span>小土豆4</span>138xxxx2502</li>
+        	<li><span>小土豆5</span>138xxxx2502</li>
+        	<li><span>小土豆</span>138xxxx2502</li>
+        	<li><span>小土豆1</span>138xxxx2502</li>
+        	<li><span>小土豆2</span>138xxxx2502</li>
+        	<li><span>小土豆3</span>138xxxx2502</li>
+        	<li><span>小土豆4</span>138xxxx2502</li>
+        	<li><span>小土豆5</span>138xxxx2502</li>
+        </ul>
+    </div>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/scrollDiv.js"></script>
+	<script>
+	$(function(){
+		$(".scrollDiv").Scroll();
+
+		$(".scrollDiv1").Scroll({
+			line: 4,//滚动行数
+            speed: 2000,//调速度
+            timer: 5000 //调时间
+		});
+	});
+
+	</script>
+</body>
+</html>
